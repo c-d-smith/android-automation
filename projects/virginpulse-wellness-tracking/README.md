@@ -20,9 +20,9 @@ Tasker can track up to four habits automatically, and the habits you want it to 
 
 #### Special Notes
 
-  # Tracking the habit `Track your weight` provides a once-per-month boost of 25 points. Otherwise, habits are worth 1 point per day for each of three habits, plus one point per day for tracking three habits.
-  # Since there is no benefit to tracking more than three habits per day, I recommend configuring Tasker to track only three habits in addition to any habits that are tracked using a fitness tracker.
-  # If you need to add a habit to complete a Challenge, then either update the automatically tracked habits list to include that habit (and keep it near the top of the list) or move it to at least the fourth position on the list and track it manually.
+  1. Tracking the habit `Track your weight` provides a once-per-month boost of 25 points. Otherwise, habits are worth 1 point per day for each of three habits, plus one point per day for tracking three habits.
+  2. Since there is no benefit to tracking more than three habits per day, I recommend configuring Tasker to track only three habits in addition to any habits that are tracked using a fitness tracker.
+  3. If you need to add a habit to complete a Challenge, then either update the automatically tracked habits list to include that habit (and keep it near the top of the list) or move it to at least the fourth position on the list and track it manually.
 
 ### Cards
 

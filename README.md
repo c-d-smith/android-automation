@@ -2,15 +2,11 @@
 
 This is a collection of [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) projects I have written. These projects are provided in XML format. To use them, save the XML file to your phone and then import it into Tasker.
 
-## Roadmap
-
-As I have time, I will add videos that demonstrate how to manually re-create these projects in Tasker. The main idea behind the videos being that they might help someone learn more about, and get more comfortable with, programming in Tasker.
-
 ## Tasker
 
-To use any of the projects I share here, you will need [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm). Some of these projects will also require one or more plugins for Tasker, and you will need the full versions of the plugins. The apps you need will be listed in each project, along with a link in the Play store.
+To use any of the projects I share here, you will need [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm). Some of these projects will also require one or more plugins for Tasker, and you will need the full versions of the plugins. The apps you need will be listed in each project, along with a link to that app in the Play store.
 
-Tasker has a number of permissions that can be granted to it. You don't necessarily need to grant them all, and Tasker is pretty good about telling you what it needs and helping you to grant the permissions. I plan to add guides to help you grant the needed permissions as I add projects to this repository.
+Tasker has a number of permissions that can be granted to it. You don't necessarily need to grant them all, and Tasker is pretty good about telling you what it needs and helping you to grant the permissions.
 
 ## Projects
 
@@ -20,6 +16,14 @@ Here is the list of projects I'm sharing (or plan to share):
   * Toggle Vibrate for Meetings
   * Vacation Cancel Calendar Notifications
   * [VirginPulse Wellness Tracking](projects/virginpulse-wellness-tracking/README.md)
+
+On each project's README page, there will be a link to get the code from Google Drive and a link to get the code from an XML file in this repository. The Google Drive link should be preferred because, if there is a delay in getting this repository's XML updated for a project, the file linked from Google Drive will always be up-to-date. I will do my best to make sure the XML file in this repository gets updated very quickly after an updated project file is uploaded to Google Drive.
+
+## Roadmap
+
+As I have time, I hope to add videos that demonstrate how to manually re-create some of these projects in Tasker. The main idea behind the videos being that they might help someone learn more about, and get more comfortable with, programming in Tasker.
+
+I also hope to add guides to help you grant the needed permissions for each project.
 
 ### Future Projects
 

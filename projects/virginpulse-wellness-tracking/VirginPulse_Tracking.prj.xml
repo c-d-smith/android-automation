@@ -29,7 +29,7 @@
     <cdate>1646865571358</cdate>
     <name>VirginPulse Tracking</name>
     <pids>151,51</pids>
-    <tids>68,256,75,144,92,10,137,32,291,125,141,89,78,2,96,122,133,135,172,149,120,115,11,179,106,268,130,285,127,167,90,175,76,47,93,160,180,91,142,171,145,150,95,9,131,54,138,128,121,97,66,69,143,94,119,124,98,140,88,146,18,136,132,163,99,70,71,82,86,262,147,79,157,129,103,105,48,123,126,217,159,85,104,116,117,80,181,148,77,134,211,238,173,279,29,53,287,269,270</tids>
+    <tids>140,2,103,68,91,291,256,32,141,144,92,117,99,179,70,66,137,115,126,89,138,71,96,146,10,69,123,122,172,119,180,105,128,120,48,76,124,88,94,121,29,171,135,149,279,163,77,9,86,54,143,167,145,133,147,148,130,157,134,136,104,97,131,75,80,93,181,116,95,132,98,79,238,150,18,125,11,159,127,106,160,173,47,285,90,129,268,175,82,262,78,142,269,53,85,211,287,270,217</tids>
     <Kid sr="Kid">
       <launchID>167</launchID>
       <pkg>com.gmail.a.c6084349553.vp.tracking</pkg>
@@ -8124,7 +8124,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
   </Task>
   <Task sr="task167">
     <cdate>1647364804447</cdate>
-    <edate>1648989751969</edate>
+    <edate>1649162828489</edate>
     <id>167</id>
     <nme>VP: Controller: App: Start</nme>
     <pri>6</pri>
@@ -9104,6 +9104,22 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
       </ConditionList>
     </Action>
     <Action sr="act68" ve="7">
+      <code>130</code>
+      <Str sr="arg0" ve="3">VP: Journey: Step: Add Habit</Str>
+      <Int sr="arg1">
+        <var>%priority</var>
+      </Int>
+      <Int sr="arg10" val="1"/>
+      <Str sr="arg2" ve="3"/>
+      <Str sr="arg3" ve="3"/>
+      <Str sr="arg4" ve="3">%add_habit_result</Str>
+      <Int sr="arg5" val="0"/>
+      <Int sr="arg6" val="0"/>
+      <Str sr="arg7" ve="3"/>
+      <Int sr="arg8" val="0"/>
+      <Int sr="arg9" val="0"/>
+    </Action>
+    <Action sr="act69" ve="7">
       <code>37</code>
       <ConditionList sr="if">
         <Condition sr="c0" ve="3">
@@ -9112,22 +9128,6 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
           <rhs>true</rhs>
         </Condition>
       </ConditionList>
-    </Action>
-    <Action sr="act69" ve="7">
-      <code>130</code>
-      <Str sr="arg0" ve="3">VP: Controller: Habits: Delete</Str>
-      <Int sr="arg1">
-        <var>%priority</var>
-      </Int>
-      <Int sr="arg10" val="1"/>
-      <Str sr="arg2" ve="3">%home_coordinates</Str>
-      <Str sr="arg3" ve="3"/>
-      <Str sr="arg4" ve="3"/>
-      <Int sr="arg5" val="0"/>
-      <Int sr="arg6" val="0"/>
-      <Str sr="arg7" ve="3"/>
-      <Int sr="arg8" val="0"/>
-      <Int sr="arg9" val="0"/>
     </Action>
     <Action sr="act7" ve="7">
       <code>130</code>
@@ -9153,12 +9153,28 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
       </ConditionList>
     </Action>
     <Action sr="act70" ve="7">
-      <code>38</code>
+      <code>130</code>
+      <Str sr="arg0" ve="3">VP: Controller: Habits: Delete</Str>
+      <Int sr="arg1">
+        <var>%priority</var>
+      </Int>
+      <Int sr="arg10" val="1"/>
+      <Str sr="arg2" ve="3">%home_coordinates</Str>
+      <Str sr="arg3" ve="3"/>
+      <Str sr="arg4" ve="3"/>
+      <Int sr="arg5" val="0"/>
+      <Int sr="arg6" val="0"/>
+      <Str sr="arg7" ve="3"/>
+      <Int sr="arg8" val="0"/>
+      <Int sr="arg9" val="0"/>
     </Action>
     <Action sr="act71" ve="7">
       <code>38</code>
     </Action>
     <Action sr="act72" ve="7">
+      <code>38</code>
+    </Action>
+    <Action sr="act73" ve="7">
       <code>559</code>
       <label>Exit app.</label>
       <Str sr="arg0" ve="3">Exit</Str>
@@ -9177,7 +9193,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
         </Condition>
       </ConditionList>
     </Action>
-    <Action sr="act73" ve="7">
+    <Action sr="act74" ve="7">
       <code>137</code>
       <Int sr="arg0" val="0"/>
       <Str sr="arg1" ve="3"/>
@@ -12113,7 +12129,7 @@ Duration: %duration</com.twofortyfouram.locale.intent.extra.BLURB>
   </Task>
   <Task sr="task53">
     <cdate>1628791620997</cdate>
-    <edate>1648827402968</edate>
+    <edate>1649157129542</edate>
     <id>53</id>
     <nme>General: Test Unlock</nme>
     <pri>100</pri>
@@ -12168,7 +12184,7 @@ Duration: %duration</com.twofortyfouram.locale.intent.extra.BLURB>
   </Task>
   <Task sr="task54">
     <cdate>1648117077698</cdate>
-    <edate>1648932818070</edate>
+    <edate>1649162843053</edate>
     <id>54</id>
     <nme>VP: Journey: Step: Add Habit</nme>
     <Action sr="act0" ve="7">
@@ -15187,7 +15203,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
   </Task>
   <Task sr="task86">
     <cdate>1646692052714</cdate>
-    <edate>1648934548034</edate>
+    <edate>1649162786855</edate>
     <id>86</id>
     <nme>VP: Controller: Journey: Steps</nme>
     <pri>100</pri>

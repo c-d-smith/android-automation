@@ -1,7 +1,7 @@
 # VirginPulse Wellness Tracking
 
 ## Get the Project Code
-  * [From Google Drive](https://drive.google.com/file/d/1gW8MtD0_2n0GCcD1W-nDaTtWzmPZ2GDx/view?usp=sharing)
+  * [From Google Drive](https://drive.google.com/drive/folders/1kaIN2fZGlpKyvxhjhof2Rm93lycEeVDq?usp=sharing)
   * [From Github](VirginPulse_Tracking.prj.xml)
 
 ## Overview

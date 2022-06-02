@@ -2,7 +2,7 @@
 	<Profile sr="prof103" ve="2">
 		<cdate>1654125280163</cdate>
 		<clp>true</clp>
-		<edate>1654165490953</edate>
+		<edate>1654172872138</edate>
 		<flags>8</flags>
 		<id>103</id>
 		<mid0>82</mid0>
@@ -17,7 +17,7 @@
 	<Profile sr="prof151" ve="2">
 		<cdate>1647786415577</cdate>
 		<clp>true</clp>
-		<edate>1654165490225</edate>
+		<edate>1654172871264</edate>
 		<flags>8</flags>
 		<id>151</id>
 		<limit>true</limit>
@@ -31,7 +31,7 @@
 	<Profile sr="prof314" ve="2">
 		<cdate>1653658162711</cdate>
 		<clp>true</clp>
-		<edate>1654165490565</edate>
+		<edate>1654172870890</edate>
 		<flags>8</flags>
 		<id>314</id>
 		<limit>true</limit>
@@ -47,8 +47,8 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1651868681739</cdate>
 		<name>Wellness Tracking</name>
-		<pids>314,103,151</pids>
-		<tids>343,372,313,374,392,398,385,299,393,406,329,141,410,399,96,10,341,358,131,390,93,408,339,356,366,355,389,411,391,344,367,340,352,95,403,18,354,365,363,94,310,387,375,364,383,357,362,312,382,300,380,350,48,353,349,351,371,82,368,345,346,413,359,333,142,20,384,396,112,370,386,338,337,361,397,402,400,369,2,331,412,379,97,360,407,335,381,180,287,306,342,388,47,401,409,32,378,376,336,305,211,104,9,377,334,373</tids>
+		<pids>103,314,151</pids>
+		<tids>383,340,358,382,10,329,370,338,357,339,406,362,359,377,371,331,305,375,353,390,366,364,380,313,47,412,349,367,334,310,373,401,411,131,396,20,399,392,337,408,379,9,365,398,386,300,104,306,389,372,387,93,393,350,361,391,356,376,381,18,180,410,354,374,363,341,333,32,352,299,141,97,94,336,344,2,413,368,343,142,397,355,287,403,369,402,384,342,385,96,346,351,82,95,360,335,400,312,211,48,345,388,378,112,407,409</tids>
 		<Img sr="icon" ve="2">
 			<cls>com.virginpulse.virginpulse.activity.SplashActivity</cls>
 			<pkg>com.virginpulse.virginpulse</pkg>
@@ -126,7 +126,7 @@
 	</Task>
 	<Task sr="task104">
 		<cdate>1654126868399</cdate>
-		<edate>1654165419963</edate>
+		<edate>1654172781920</edate>
 		<id>104</id>
 		<nme>Wellness: Setup: Input: Unlock: Checkmark</nme>
 		<pri>100</pri>
@@ -933,7 +933,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task180">
 		<cdate>1648304430798</cdate>
-		<edate>1654165281557</edate>
+		<edate>1654172793346</edate>
 		<id>180</id>
 		<nme>Wellness: Setup: Input: Active Habits</nme>
 		<pri>100</pri>
@@ -8011,7 +8011,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task381">
 		<cdate>1648158478417</cdate>
-		<edate>1653656169003</edate>
+		<edate>1654172087595</edate>
 		<id>381</id>
 		<nme>Wellness: Controller: Cards</nme>
 		<Action sr="act0" ve="7">
@@ -8052,14 +8052,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act11" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Wellness: Get: Coordinates: Button: Cards: Will Do</Str>
+			<Str sr="arg0" ve="3">Wellness: Get: Coordinates: Button: Cards: Not Now</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
 			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3">%coordinates_button_will_do</Str>
+			<Str sr="arg4" ve="3">%coordinates_text_not_now</Str>
 			<Int sr="arg5" val="0"/>
 			<Int sr="arg6" val="0"/>
 			<Str sr="arg7" ve="3"/>
@@ -8070,7 +8070,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%coordinates_button_will_do</lhs>
+					<lhs>%coordinates_text_not_now</lhs>
 					<op>1</op>
 					<rhs>false</rhs>
 				</Condition>
@@ -8083,7 +8083,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
-			<Str sr="arg2" ve="3">%coordinates_button_will_do</Str>
+			<Str sr="arg2" ve="3">%coordinates_text_not_now</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -8105,14 +8105,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act16" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Wellness: Get: Coordinates: Button: Cards: Boolean</Str>
+			<Str sr="arg0" ve="3">Wellness: Get: Coordinates: Button: Cards: Got It</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
 			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3">%coordinates_button_boolean</Str>
+			<Str sr="arg4" ve="3">%coordinates_button_got_it</Str>
 			<Int sr="arg5" val="0"/>
 			<Int sr="arg6" val="0"/>
 			<Str sr="arg7" ve="3"/>
@@ -8123,7 +8123,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%coordinates_button_boolean</lhs>
+					<lhs>%coordinates_button_got_it</lhs>
 					<op>1</op>
 					<rhs>false</rhs>
 				</Condition>
@@ -8136,7 +8136,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
-			<Str sr="arg2" ve="3">%coordinates_button_boolean</Str>
+			<Str sr="arg2" ve="3">%coordinates_button_got_it</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -8146,10 +8146,12 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act19" ve="7">
-			<code>135</code>
-			<Int sr="arg0" val="1"/>
+			<code>126</code>
+			<Str sr="arg0" ve="3">1</Str>
 			<Int sr="arg1" val="1"/>
-			<Str sr="arg2" ve="3">Repeat from here for boolean</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3"/>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>37</code>
@@ -8166,14 +8168,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act21" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Wellness: Get: Coordinates: Button: Cards: Don't Show Again</Str>
+			<Str sr="arg0" ve="3">Wellness: Get: Coordinates: Button: Cards: Will Do</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
 			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3">%coordinates_button_dont_show_again</Str>
+			<Str sr="arg4" ve="3">%coordinates_button_will_do</Str>
 			<Int sr="arg5" val="0"/>
 			<Int sr="arg6" val="0"/>
 			<Str sr="arg7" ve="3"/>
@@ -8184,7 +8186,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%coordinates_button_dont_show_again</lhs>
+					<lhs>%coordinates_button_will_do</lhs>
 					<op>1</op>
 					<rhs>false</rhs>
 				</Condition>
@@ -8197,7 +8199,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
-			<Str sr="arg2" ve="3">%coordinates_button_dont_show_again</Str>
+			<Str sr="arg2" ve="3">%coordinates_button_will_do</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -8219,14 +8221,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act26" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Wellness: Get: Coordinates: Button: Cards: Not Now</Str>
+			<Str sr="arg0" ve="3">Wellness: Get: Coordinates: Button: Cards: Boolean</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
 			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3">%coordinates_text_not_now</Str>
+			<Str sr="arg4" ve="3">%coordinates_button_boolean</Str>
 			<Int sr="arg5" val="0"/>
 			<Int sr="arg6" val="0"/>
 			<Str sr="arg7" ve="3"/>
@@ -8237,7 +8239,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%coordinates_text_not_now</lhs>
+					<lhs>%coordinates_button_boolean</lhs>
 					<op>1</op>
 					<rhs>false</rhs>
 				</Condition>
@@ -8250,7 +8252,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
-			<Str sr="arg2" ve="3">%coordinates_text_not_now</Str>
+			<Str sr="arg2" ve="3">%coordinates_button_boolean</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -8260,12 +8262,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act29" ve="7">
-			<code>126</code>
-			<Str sr="arg0" ve="3">1</Str>
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
 			<Int sr="arg1" val="1"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Str sr="arg4" ve="3"/>
+			<Str sr="arg2" ve="3">Repeat from here for boolean</Str>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>130</code>
@@ -8299,14 +8299,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act6" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Wellness: Get: Coordinates: Button: Cards: Got It</Str>
+			<Str sr="arg0" ve="3">Wellness: Get: Coordinates: Button: Cards: Don't Show Again</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
 			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3">%coordinates_button_got_it</Str>
+			<Str sr="arg4" ve="3">%coordinates_button_dont_show_again</Str>
 			<Int sr="arg5" val="0"/>
 			<Int sr="arg6" val="0"/>
 			<Str sr="arg7" ve="3"/>
@@ -8317,7 +8317,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%coordinates_button_got_it</lhs>
+					<lhs>%coordinates_button_dont_show_again</lhs>
 					<op>1</op>
 					<rhs>false</rhs>
 				</Condition>
@@ -8330,7 +8330,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
-			<Str sr="arg2" ve="3">%coordinates_button_got_it</Str>
+			<Str sr="arg2" ve="3">%coordinates_button_dont_show_again</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -13302,7 +13302,7 @@ Tracking will automatically resume on 1 September.</Str>
 	</Task>
 	<Task sr="task95">
 		<cdate>1654122705299</cdate>
-		<edate>1654165079635</edate>
+		<edate>1654172806220</edate>
 		<id>95</id>
 		<nme>Wellness: Setup: Input: Unlock: Swipe Direction</nme>
 		<pri>100</pri>
@@ -13320,7 +13320,7 @@ The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker
 			<Str sr="arg2" ve="3">Tasker needs to know the direction you swipe to unlock your phone.
 
 Click OK to make your selection.</Str>
-			<Str sr="arg3" ve="3"/>
+			<Str sr="arg3" ve="3">OK</Str>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 			<Int sr="arg6" val="30"/>
@@ -13406,7 +13406,7 @@ The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker
 	</Task>
 	<Task sr="task97">
 		<cdate>1654123993335</cdate>
-		<edate>1654164548444</edate>
+		<edate>1654172774844</edate>
 		<id>97</id>
 		<nme>Wellness: Setup: Controller: Input: Unlock</nme>
 		<Action sr="act0" ve="7">

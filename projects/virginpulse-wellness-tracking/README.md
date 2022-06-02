@@ -38,7 +38,7 @@ Once tracking has been completed, VirginPulse will be left open on your device t
 
 All habits are supported, except `Get a Workout`. This is because `Get a Workout` is too open-ended and the amount of work required to automate tracking this habit would almost certainly be exorbitant. Most habits are `Yes/No` or 'simple' habits, and Tasker will always choose `Yes`. The habit `Track your mood` presents you with a choice of six 'mood faces' and Tasker will always choose the happy face.
 
-Some habits use a number-picker, while a few ask you to enter a number. The values entered for these habits are all randomized, and you choose the range of values. If you choose the same value for each end of the range, then that is the number that will always be used.
+Some habits use a number-picker, while a few ask you to enter a number. The values entered for these habits are all randomized, and you can customize the range of values. If you choose the same value for each end of the range, then that is the number that will always be used. Similarly, if you choose a larger value for the bottom end of the range, then that is the number that will always be used.
 
 Tasker can track up to four habits automatically, and the habits you want it to track need to be at the top of the list. This project is not coded to scroll down the list to look for habits to track. I did have it set up this way for a while, but it created too much unpredictability and I removed it. Place your Tasker-tracked habits at the top of the list, followed by any other habits, such as those tracked using a fitness tracker or those you will manually track.
 
@@ -46,7 +46,7 @@ Tasker can track up to four habits automatically, and the habits you want it to 
 
   1. Tracking the habit `Track your weight` provides a once-per-month boost of 25 points. Otherwise, habits are worth 1 point per day for each of three habits, plus one point per day for tracking habits.
   2. Since there is no benefit to tracking more than three habits per day, I recommend configuring Tasker to track only three habits in addition to any habits that are tracked using a fitness tracker.
-  3. If you need to add a habit to complete a Challenge, I recommend simply running the setup routine again and have Tasker pick up the additional habit. When the challenge ends, Tasker will automatically stop tracking that habit and remove it from the list in VirginPulse.
+  3. Tracking only three habits also leaves room for Tasker to automatically track challenge-related habits. The simplest way to include a new habit is to run the setup routine again. When the challenge ends, Tasker will automatically stop tracking that habit and remove it from the list in VirginPulse.
 
 ### Cards
 

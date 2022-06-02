@@ -1,8 +1,32 @@
 # VirginPulse Wellness Tracking
 
+Version: 2.0.3
+Release Date: 2 Jun 2022
+
 ## Get the Project Code
-  * [From Google Drive](https://drive.google.com/drive/folders/1kaIN2fZGlpKyvxhjhof2Rm93lycEeVDq?usp=sharing)
-  * [From Github](VirginPulse_Tracking.prj.xml)
+  * [From Google Drive](https://drive.google.com/drive/folders/16w52w_VQboNBUQmc9RJWLqditiVLIlBM?usp=sharing)
+  * [From Github](Wellness_Tracking.prj.xml)
+
+## What Changed
+
+The project has been completely refactored. This includes a name change, as well, though the icon used is still that of VirginPulse. The dependency on AutoTools has been removed, and the only applications necessary now are Tasker and AutoInput.
+
+### Tracking
+Card interactions have been updated. In the interest of improved reliability, the tracker will interact with all cards instead of just cards worth points.
+
+Habit tracking has been improved. When a habit is tracked as part of a challenge, the tracker will automatically stop tracking and remove it when the challenge is over. It should be noted that VirginPulse indicates the habit can be removed a full day before the habit can *actually* be removed. Don't worry about this; Tasker will remove it from your list of tracked habits.
+
+Journey taking has been improved and simplified. The path through the logic is more reliable, and I have removed some logic that is no longer needed due to changes in how the VirginPulse app behaves.
+
+Tracking will now also only happen if you have not reached your annual target. Before v2.0.0, tracking would still be done one day after reaching your target. From v2.0.0 onward, the day after reaching your target, Tasker will update the relevant variables and exit without performing tracking.
+
+### Setup
+I have implemented a setup routine that can easily be run whenever the user chooses. After you import the project into Tasker, simply open VirginPulse and the setup routine will run. To run it again in the future, simply open Tasker, turn on the setup profile, and then open VirginPulse. In all cases, it is important to remember that opening VirginPulse is the **last step** in running the setup routine.
+
+The setup routine will set default values for all the tracker's variables. The variables are still described in detail below for those users interested in knowing how they're used or for those interested in customizing the default values.
+
+### Technical
+The tracker's tasks now also adhere much more closely to the Single Responsibility principle.
 
 ## Overview
 
@@ -20,15 +44,15 @@ Tasker can track up to four habits automatically, and the habits you want it to 
 
 #### Special Notes
 
-  1. Tracking the habit `Track your weight` provides a once-per-month boost of 25 points. Otherwise, habits are worth 1 point per day for each of three habits, plus one point per day for tracking three habits.
+  1. Tracking the habit `Track your weight` provides a once-per-month boost of 25 points. Otherwise, habits are worth 1 point per day for each of three habits, plus one point per day for tracking habits.
   2. Since there is no benefit to tracking more than three habits per day, I recommend configuring Tasker to track only three habits in addition to any habits that are tracked using a fitness tracker.
-  3. If you need to add a habit to complete a Challenge, then either update the automatically tracked habits list to include that habit (and keep it near the top of the list) or move it to at least the fourth position on the list and track it manually.
+  3. If you need to add a habit to complete a Challenge, I recommend simply running the setup routine again and have Tasker pick up the additional habit. When the challenge ends, Tasker will automatically stop tracking that habit and remove it from the list in VirginPulse.
 
 ### Cards
 
-Tasker will do two cards for you each day. It will only do cards that have `GOT IT`, `WILL DO`, or `TRUE/FALSE` buttons, and it will ignore the rest. You can manually interact with announcement or challenge cards, if you choose. If you choose to ignore them, that's entirely fine, too.
+Tasker will do your cards each day. It no longer ignores cards that are not worth points, such as announcements. Instead, it will click "Not now", "Dismiss announcement", or whatever else is required to mark the card as "complete".
 
-While tracking cards, Tasker will return to the Home screen after each card it tracks. This simplifies tracking cards because this interface is maddeningly difficult to query reliably. I found that speed and reliability were each improved by returning to the Home screen after tracking each card.
+While tracking cards, Tasker will return to the Home screen after each card it tracks. This simplifies tracking cards because this interface is maddeningly difficult to query reliably. I found that speed and reliability were both improved by returning to the Home screen after tracking each card.
 
 ### Journeys
 
@@ -54,27 +78,18 @@ I recommend disabling "Achievement Announcements" in your personal preferences b
 
 In addition, the app will periodically ask you to rate it in the app store. I believe Tasker will gracefully handle these, but it is possible it will not. I have not been able to code to handle these because these overlays disappear when you change which app is active. In order to code for these, I have to be able to have Tasker query for them, but they're never there when I try to have Tasker retrieve their information.
 
-#### Project Setup
-
-There are currently no user interfaces to make setting this project up easier. I was working on this and I thought I was nearly done with it. Unfortunately, I discovered that they don't scale very well when the screen resolution of the device displaying them is different from the screen resolution of the device on which the interfaces were created. I am working to figure out how to overcome this.
-
 ## Apps Required
 
   * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)
   * [AutoInput](https://play.google.com/store/apps/details?id=com.joaomgcd.autoinput)
-  * [AutoTools](https://play.google.com/store/apps/details?id=com.joaomgcd.autotools)
 
-In order to use this project, you will need to purchase the full version of each of these apps, if you have not already. They are not expensive; in aggregate, less than $8 USD as of 4 April 2022.
+In order to use this project, you will need to purchase the full version of each of these apps, if you have not already. They are not expensive; in aggregate, less than $6 USD as of 2 Jun 2022.
 
 ### Tasker Setup and Permissions
 
 Coming soon.
 
 ### AutoInput Setup and Permissions
-
-Coming soon.
-
-### AutoTools Setup and Permissions
 
 Coming soon.
 
@@ -88,6 +103,10 @@ It is possible that cloning the mobile banking app into the Work Profile will al
 
 ## Project Setup
 
+As of v2.0.0, I have implemented a setup routine using dialog boxes. The setup routine is controlled by a profile, which is triggered by opening VirginPulse. After importing this project into Tasker, this profile should already be turned on; all you need to do is open VirginPulse and setup will run. When setup is complete, the other profiles in this project will be turned on and the setup profile will turn off.
+
+Setup can be re-run at any time by opening Tasker, turning on the setup profile, and then opening VirginPulse. This will be particularly useful for adding challenge-related habits. Be aware, though, that running setup again will set all the tracking-related variables to their defaults. If you have customized any of these defaults, those changes will be over-written.
+
 ### Tasker Setup
 
 #### Variables
@@ -98,13 +117,11 @@ It is possible that cloning the mobile banking app into the Work Profile will al
 
 #### Overview
 
-Tasker needs to be able to unlock your device. To do this, Tasker will need to know whether you tap a checkmark after entering your PIN, your PIN, and the direction you swipe to reveal the keypad.
+Tasker needs to be able to unlock your device. To do this, Tasker will need to know whether you tap a checkmark after entering your PIN, your PIN, and the direction you swipe to reveal the keypad. The setup routine included starting with v2.0.0 will prompt you to set the necessary variables to enable Tasker to unlock your phone.
 
-This means your device will need to be unlocked using a PIN. If your device is not currently set to unlock using a PIN, you will need to change this. If you are not comfortable making this change, you could still use this project provided you ensure your device is unlocked daily at the time you select tracking to be completed.
+If you want Tasker to be able to perform the tracking with no intervention from you, your device will need to be unlocked using a PIN. If your device is not currently set to unlock using a PIN, you will need to change this. If you are not comfortable making this change, you could still use this project provided you ensure your device is unlocked daily at the time you select tracking to be completed.
 
-With respect to data security, Tasker can be configured to automatically back up your projects, including variables. However, none of my projects are otherwise coded to exfiltrate your data or settings. I have no reason to make this happen, especially because I use these projects personally.
-
-I created a task to make setting these variables easier: `General: Setup: Unlock`. On the `TASKS` tab, find this task and tap it to open it for editing. The first three actions in the task are where you will set the specifics for your device. After you have updated the actions as needed, then tap the play button in the lower left corner. Finally, tap the back arrow in the upper left corner to return to the `TASKS` tab.
+With respect to data security, Tasker can be configured to automatically back up your projects, including variables. However, this is entirely up to you and it is not something I am able to set on your device. None of my projects are otherwise coded to exfiltrate your data or settings. I have no reason to make this happen, both because I use these projects personally and because I don't care to know your data.
 
 ### Project Setup
 
@@ -112,14 +129,9 @@ I created a task to make setting these variables easier: `General: Setup: Unlock
 
   * `%AnnualTarget`
   * `%AppRunTime`
-  * `%DebugEnd`
-  * `%DebugFlash`
-  * `%DebugNotify`
-  * `%DebugSay`
   * `%DoCards`
   * `%DoHabits`
   * `%DoJourney`
-  * `%FoundHabits`
   * `%Habits`
   * `%MindfulHoursDefault`
   * `%MindfulHoursMax`
@@ -156,67 +168,29 @@ I created a task to make setting these variables easier: `General: Setup: Unlock
 
 #### Overview
 
-That is pretty long list of variables, but most of them are habit-related and, as such, only need to be set if you are tracking the relevant habit. **You do not need to manually set all these variables.** *So don't let the list overwhelm you!*
+That is pretty long list of variables, but most of them are habit-related. The setup routine will set defaults for all these variables, except `AnnualTarget`, `AppRunTime`, and `Habits`. Setup will prompt you for the values for the first two, and will query VirginPulse for a list of habits from which you will select the habits to track.
 
-I created a task to set all these variables to what I consider safe default values. If you want to use that and move on, find the task `VP: Controller: App: Setup: Defaults: Easy`, tap it to open it, and then tap the play button in the lower left corner.
-
-When you do this, VirginPulse will open, Tasker will navigate to your list of habits, read them, and set the first three to be automatically tracked. VirginPulse will then close and you will return to Tasker. **It is important not to touch anything until after you are returned to Tasker!** On the other hand, if something does go wrong, nothing is broken; just re-run the task and Tasker will attempt setup again.
-
-If you would rather DIY setting the values for the variables you actually need, please run the task `VP: Controller: App: Setup: Defaults: UI`. This sets the variables that represent the default values presented in the VirginPulse user interface for some habits. Of course, you can also set those variables yourself, as well.
+**Even if you want to customize the values, please run the setup routine first!** The setup routine sets some important default values that I cannot set during project import, and it provides a template for what the other values should look like. Once that is complete, you can customize the parameters for the habits you are tracking.
 
 Following is an explanation of what each variable is for, what its possible values are, and how to set them. 
 
 ##### `%AnnualTarget`
 
-Default Value: `10000`<br />
-Possible Values: Any integer
+Default Value: No default<br />
+Possible Values: Any positive integer
 
-This is the number of points you want to earn each year before tracking automatically stops. This needs to be entered as an integer, and without any punctuation. If you are setting this up for your spouse or partner, then you would most likely enter `2500` since anything over that doesn't matter, anyway. For yourself, you'll probably choose `5000`, `7500`, or `10000`.
+This is the number of points you want to earn each year before tracking automatically stops. This needs to be entered as a positive integer, and without any punctuation. If you are setting this up for your spouse or partner, then you would most likely enter `2500` since anything over that doesn't matter, anyway. For yourself, you'll probably choose `5000`, `7500`, or `10000`.
 
-If you don't want tracking to stop ever, simply enter some ridiculously large integer, such as `999999`. As long as it's an integer, it can be whatever you choose. Be aware that a negative integer will result in automatic wellness tracking occurring exactly once each year.
+If you don't want tracking to stop ever, simply enter some ridiculously large integer, such as `999999`. As long as it's a positive integer, it can be whatever you choose. Be aware that an integer less than one will result in tracking never occurring.
 
 ##### `%AppRunTime`
 
-Default Value: `12:00`<br />
+Default Value: No default<br />
 Possible Values: Any time, in hh:mm format
 
 This is the time of day you want tracking to occur. This is entered using 24-hour clock notation. If you want tracking to occur at `9:15 AM`, then you would set this to `9:15`; whereas if you wanted tracking to occur at `3:59 PM`, then you would set this to `15:59`.
 
 For those who are not familiar with 24-hour notation, hours after Noon are represented as `12+X` where `X` is the afternoon hour. So, `1:00 PM` would be `13`. Midnight is represented as `00` - NOT `24`.
-
-##### `%DebugEnd`
-
-Default Value: `false`<br />
-Possible Values: `true`, `false`
-
-This is used simply to make Tasker say `Exit` when tracking is complete.
-
-##### `%DebugFlash`
-
-Default Value: `false`<br />
-Possible Values: `true`, `false`
-
-This is used to make Tasker flash a message (typically at the bottom of the screen) to indicate what it is doing. This is mostly used in situations where looping activity is possible, such as when trying to verify that a given page in VirginPulse has loaded.
-
-This can slow the task that is running to provide time to flash the message, and [so far] not all messages will flash. I have not been able to find a reason why some messages are not flashed, especially since they all use the same flashing mechanism.
-
-##### `%DebugNotify`
-
-Default Value: `false`<br />
-Possible Values: `true`, `false`
-
-This is used to make Tasker create a notification in your tray. Generally, this is used when a task is invoked and the only useful information provided is the name of the invoked task.
-
-This has minimal to no effect on the speed at which Tasker attempts looping activity and, as such, it can generate upwards of one hundred notifications.
-
-##### `%DebugSay`
-
-Default Value: `false`<br />
-Possible Values: `true`, `false`
-
-This is used to make Tasker say the name of the task that has been invoked.
-
-This imposes considerable delay in proceeding through the tracking tasks, and can mask the source of trouble on a device with lower RAM and/or a slower CPU. This is useful when trying to determine whether it is an issue of Tasker needing to wait for the VirginPulse UI to update versus poorly constructed logic.
 
 ##### `%DoCards`
 
@@ -238,13 +212,6 @@ Default Value: `true`<br />
 Possible Values: `true`, `false`
 
 This is used to control whether Tasker will automatically do your journey. If you want to exempt this from automation, set this to `false` or leave it unset.
-
-##### `%FoundHabits`
-
-Default Value: unset<br />
-Possible Values: varies; array
-
-This is used by the easy setup routine mentioned earlier. It will be populated with the habits Tasker found in VirginPulse. *You do not need to do anything with this variable.* **Ever.**
 
 ##### `%Habits`
 

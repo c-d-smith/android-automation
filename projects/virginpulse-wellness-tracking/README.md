@@ -1,7 +1,7 @@
 # VirginPulse Wellness Tracking
 
-Version: 2.0.3
-Release Date: 2 Jun 2022
+  * Version: 2.0.3
+  * Release Date: 2 Jun 2022
 
 ## Get the Project Code
   * [From Google Drive](https://drive.google.com/drive/folders/16w52w_VQboNBUQmc9RJWLqditiVLIlBM?usp=sharing)

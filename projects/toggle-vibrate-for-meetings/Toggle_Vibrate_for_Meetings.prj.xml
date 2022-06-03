@@ -2,10 +2,9 @@
 	<Profile sr="prof105" ve="2">
 		<cdate>1654292093977</cdate>
 		<clp>true</clp>
-		<edate>1654292459735</edate>
+		<edate>1654294875130</edate>
 		<flags>8</flags>
 		<id>105</id>
-		<limit>true</limit>
 		<mid0>84</mid0>
 		<nme>Toggle Vibrate: Setup</nme>
 		<State sr="con0" ve="2">
@@ -22,8 +21,9 @@
 	<Profile sr="prof6" ve="2">
 		<cdate>1425001706648</cdate>
 		<clp>true</clp>
-		<edate>1654290659074</edate>
+		<edate>1654294873972</edate>
 		<id>6</id>
+		<limit>true</limit>
 		<mid0>14</mid0>
 		<mid1>19</mid1>
 		<nme>Toggle Vibrate: With Holiday Calendar</nme>
@@ -57,7 +57,7 @@
 	<Profile sr="prof87" ve="2">
 		<cdate>1425001706648</cdate>
 		<clp>true</clp>
-		<edate>1654290691157</edate>
+		<edate>1654294870758</edate>
 		<id>87</id>
 		<limit>true</limit>
 		<mid0>14</mid0>
@@ -84,17 +84,19 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1627998205106</cdate>
 		<name>Toggle Vibrate for Meetings</name>
-		<pids>6,105,87</pids>
-		<tids>98,99,102,19,84,14</tids>
+		<pids>6,87,105</pids>
+		<tids>19,84,99,14,98,102</tids>
 		<Share sr="Share">
 			<b>false</b>
-			<d>v2.0.0
+			<d>v2.0.1
 
 This project turns on vibrate mode when your `WorkCalendar` has an event on it that marks you as "busy", and when there isn't an "Out of office" event on that calendar. When the "busy" event ends, vibrate mode is turned off.
 
 It has two profiles: one that also checks a calendar for events indicating your employer is closed for holidays, and one that does not.
 
-This also has an installer that helps you select the Google calendars to check for these events. If you don't use Google calendars, then you'll need to edit the profile contexts directly or directly edit the variables' values.</d>
+This also has an installer that helps you select the Google calendars to check for these events. If you don't use Google calendars, then you'll need to edit the profile contexts directly or directly edit the variables' values.
+
+See https://GitHub.com/c-d-smith/android-automation/projects/toggle-vibrate-for-meetings for more information.</d>
 			<g>Calendar,Utility,Volume</g>
 			<p>true</p>
 			<t></t>

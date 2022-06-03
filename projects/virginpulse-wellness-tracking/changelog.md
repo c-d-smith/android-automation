@@ -1,6 +1,6 @@
 # v2.0.4
 
-Fixed a bug in the setup routine that incorrectly referenced an obsolete variable used to set the device's unlock swipe direction. This caused `%SwipeDirection` to be incorrect set to `%input`, leading to Tasker being unable to unlock the phone.
+Fixed a bug in the setup routine that incorrectly referenced an obsolete variable used to set the device's unlock swipe direction. This caused `%SwipeDirection` to be incorrectly set to `%input`, leading to Tasker being unable to unlock the phone.
 
 # v2.0.3
 

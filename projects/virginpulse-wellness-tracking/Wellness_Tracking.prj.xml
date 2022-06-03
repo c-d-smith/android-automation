@@ -2,7 +2,7 @@
 	<Profile sr="prof103" ve="2">
 		<cdate>1654125280163</cdate>
 		<clp>true</clp>
-		<edate>1654173834451</edate>
+		<edate>1654201029902</edate>
 		<flags>8</flags>
 		<id>103</id>
 		<mid0>82</mid0>
@@ -17,7 +17,7 @@
 	<Profile sr="prof151" ve="2">
 		<cdate>1647786415577</cdate>
 		<clp>true</clp>
-		<edate>1654173833627</edate>
+		<edate>1654201031414</edate>
 		<flags>8</flags>
 		<id>151</id>
 		<limit>true</limit>
@@ -31,7 +31,7 @@
 	<Profile sr="prof314" ve="2">
 		<cdate>1653658162711</cdate>
 		<clp>true</clp>
-		<edate>1654173834011</edate>
+		<edate>1654201031807</edate>
 		<flags>8</flags>
 		<id>314</id>
 		<limit>true</limit>
@@ -46,7 +46,24 @@
 		<cdate>1651868681739</cdate>
 		<name>Wellness Tracking</name>
 		<pids>103,314,151</pids>
-		<tids>374,402,337,306,383,400,413,406,352,373,300,361,392,333,384,312,370,386,10,343,378,349,334,142,403,380,131,18,397,398,346,141,344,411,112,377,331,359,310,339,355,375,362,9,351,313,379,338,371,367,372,336,360,345,376,364,412,391,48,305,299,407,2,335,366,95,396,104,287,401,381,385,329,363,387,94,106,368,350,389,340,388,47,342,20,93,369,357,382,409,408,365,97,410,399,82,358,211,390,32,393,180,96,353,341,356,354</tids>
+		<tids>2,371,402,403,385,32,390,9,368,412,389,374,141,351,364,410,356,82,369,331,343,400,10,388,391,353,338,409,337,407,131,401,20,300,378,306,370,398,93,350,352,366,411,367,361,383,392,380,396,376,375,406,18,313,413,112,362,48,334,359,336,310,287,393,104,382,345,340,329,346,372,360,94,387,357,106,180,355,95,344,335,363,333,299,397,47,341,305,339,349,358,386,399,381,373,365,379,96,97,384,142,354,342,211,408,377,312</tids>
+		<Share sr="Share">
+			<b>false</b>
+			<d>v2 0.3
+&lt;br /&gt;&lt;br /&gt;
+This is a detailed and configurable project to perform wellness tracking in the VirginPulse app. It's capable of tracking "healthy habits", cards, and journeys.
+&lt;br /&gt;&lt;br /&gt;
+v2 includes a setup routine that runs when VirginPulse is opened after importing this project. The setup routine can be run again by enabling the profile and opening VirginPulse.
+&lt;br /&gt;&lt;br /&gt;
+This version requires only AutoInput.
+&lt;br /&gt;&lt;br /&gt;
+Tasker still needs to be able to unlock your phone.
+&lt;br /&gt;&lt;br /&gt;
+See https://github.com/c-d-smith/android-automation/blob/main/projects/virginpulse-wellness-tracking/README.md for more information.</d>
+			<g>Fitness,Utility</g>
+			<p>true</p>
+			<t></t>
+		</Share>
 		<Img sr="icon" ve="2">
 			<cls>com.virginpulse.virginpulse.activity.SplashActivity</cls>
 			<pkg>com.virginpulse.virginpulse</pkg>
@@ -770,7 +787,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task18">
 		<cdate>1627653967182</cdate>
-		<edate>1654162693585</edate>
+		<edate>1654200994060</edate>
 		<id>18</id>
 		<nme>General: Unlock Phone</nme>
 		<pri>100</pri>
@@ -2494,7 +2511,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task32">
 		<cdate>1532503807225</cdate>
-		<edate>1654162896543</edate>
+		<edate>1654190331817</edate>
 		<id>32</id>
 		<nme>General: Unlock Step</nme>
 		<pri>100</pri>
@@ -3429,7 +3446,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task337">
 		<cdate>1591651079109</cdate>
-		<edate>1651870640236</edate>
+		<edate>1654201024911</edate>
 		<id>337</id>
 		<nme>General: Get: Lock Status</nme>
 		<pri>100</pri>
@@ -12611,7 +12628,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task47">
 		<cdate>1630446043193</cdate>
-		<edate>1649532753497</edate>
+		<edate>1654199482136</edate>
 		<id>47</id>
 		<nme>General: Clear Single App</nme>
 		<pri>100</pri>
@@ -12754,7 +12771,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task48">
 		<cdate>1630446299923</cdate>
-		<edate>1649248517218</edate>
+		<edate>1654199456536</edate>
 		<id>48</id>
 		<nme>General: Swipe, Vertical</nme>
 		<Action sr="act0" ve="7">
@@ -13361,7 +13378,7 @@ Tracking will automatically resume on 1 September.</Str>
 	</Task>
 	<Task sr="task95">
 		<cdate>1654122705299</cdate>
-		<edate>1654172806220</edate>
+		<edate>1654200742668</edate>
 		<id>95</id>
 		<nme>Wellness: Setup: Input: Unlock: Swipe Direction</nme>
 		<pri>100</pri>
@@ -13420,7 +13437,7 @@ Selected Index
 		<Action sr="act2" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%SwipeDirection</Str>
-			<Str sr="arg1" ve="3">%input</Str>
+			<Str sr="arg1" ve="3">%ld_selected</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>

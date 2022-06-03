@@ -49,7 +49,7 @@ It is possible that tracking using a number-picker may not be perfectly precise.
 
 #### Journeys
 
-If there are no uncompleted journeys, then Tasker will end up repeating the same journey over and over. There is no easy way to get Tasker to move down the list of journeys and select a different already completed journey each time.
+If there are no uncompleted journeys, then Tasker will end up repeating the same journey over and over. There is no easy way to get Tasker to move down the list of journeys and select a different, already-completed journey each time.
 
 #### Achievement Announcements
 
@@ -57,7 +57,7 @@ I recommend disabling "Achievement Announcements" in your personal preferences b
 
 #### Rate in the App Store
 
-In addition, the app will periodically ask you to rate it in the app store. I believe Tasker will gracefully handle these, but it is possible it will not. I have not been able to code to handle these because these overlays disappear when you change which app is active. In order to code for these, I have to be able to have Tasker query for them, but they're never there when I try to have Tasker retrieve their information.
+The app will periodically ask you to rate it in the app store. I believe Tasker will gracefully handle these, but it is possible it will not. I have not been able to code the project to handle these because these overlays disappear when you change which app is active. In order to code for these, I have to be able to have Tasker query for them, but they're never there when I try to have Tasker retrieve their information.
 
 ## Apps Required
 
@@ -78,7 +78,7 @@ Coming soon.
 
 Certain other apps may be unhappy that you have installed AutoInput, especially mobile banking apps because they may view automated click programs as a security vulnerability.
 
-I really cannot understand why because the touch interactions that AutoInput generates are, from what I can see, exactly the same as actual touch interactions. If an attacker has enough control over your device to write Tasker projects to automate logging into your mobile banking app, then they have enough control over your device to log into your mobile banking app without the use of Tasker and AutoInput.
+I really cannot understand why, because the touch interactions that AutoInput generates are, from what I can see, exactly the same as actual touch interactions. If an attacker has enough control over your device to write Tasker projects to automate logging into your mobile banking app, then they have enough control over your device to log into your mobile banking app without the use of Tasker and AutoInput.
 
 It is possible that cloning the mobile banking app into the Work Profile will alleviate this problem.
 

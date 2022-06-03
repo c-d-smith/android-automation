@@ -18,7 +18,7 @@ Tracking will now also only happen if you have not reached your annual target. B
 ### Setup
 I have implemented a setup routine that can easily be run whenever the user chooses. After you import the project into Tasker, simply open VirginPulse and the setup routine will run. To run it again in the future, simply open Tasker, turn on the setup profile, and then open VirginPulse. In all cases, it is important to remember that opening VirginPulse is the **last step** in running the setup routine.
 
-The setup routine will set default values for all the tracker's variables. The variables are still described in detail below for those users interested in knowing how they're used or for those interested in customizing the default values.
+The setup routine will set default values for all the tracker's variables. The variables are still described in detail on the [README](README.md) for those users interested in knowing how they're used or for those interested in customizing the default values.
 
 ### Technical
 The tracker's tasks now also adhere much more closely to the Single Responsibility principle.

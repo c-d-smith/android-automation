@@ -157,8 +157,8 @@ Following is an explanation of what each variable is for, what its possible valu
 
 ##### `%AnnualTarget`
 
-Default Value: No default<br />
-Possible Values: Any positive integer
+  * Default Value: No default
+  * Possible Values: Any positive integer
 
 This is the number of points you want to earn each year before tracking automatically stops. This needs to be entered as a positive integer, and without any punctuation. If you are setting this up for your spouse or partner, then you would most likely enter `2500` since anything over that doesn't matter, anyway. For yourself, you'll probably choose `5000`, `7500`, or `10000`.
 
@@ -166,8 +166,8 @@ If you don't want tracking to stop ever, simply enter some ridiculously large in
 
 ##### `%AppRunTime`
 
-Default Value: No default<br />
-Possible Values: Any time, in hh:mm format
+  * Default Value: No default
+  * Possible Values: Any time, in hh:mm format
 
 This is the time of day you want tracking to occur. This is entered using 24-hour clock notation. If you want tracking to occur at `9:15 AM`, then you would set this to `9:15`; whereas if you wanted tracking to occur at `3:59 PM`, then you would set this to `15:59`.
 
@@ -175,29 +175,29 @@ For those who are not familiar with 24-hour notation, hours after Noon are repre
 
 ##### `%DoCards`
 
-Default Value: `true`<br />
-Possible Values: `true`, `false`
+  * Default Value: `true`
+  * Possible Values: `true`, `false`
 
 Set this to `true` to have Tasker automatically do your cards. If you want to exempt them from automation, set this to `false` or leave it unset.
 
 ##### `%DoHabits`
 
-Default Value: `true`<br />
-Possible Values: `true`, `false`
+  * Default Value: `true`
+  * Possible Values: `true`, `false`
 
 Set this to `true` to have Tasker automatically track your habits. If you want to exempt them from automation, set this to `false` or leave it unset.
 
 ##### `%DoJourney`
 
-Default Value: `true`<br />
-Possible Values: `true`, `false`
+  * Default Value: `true`
+  * Possible Values: `true`, `false`
 
 This is used to control whether Tasker will automatically do your journey. If you want to exempt this from automation, set this to `false` or leave it unset.
 
 ##### `%Habits`
 
-Default Value: unset<br />
-Possible Values: varies; array
+  * Default Value: unset
+  * Possible Values: varies; array
 
 This is the master list of habits that Tasker tracks for you. To set this, tap the plus sign button in the lower right corner. Name the variable `%HabitsX`, where `X` is a number greater than zero (0). Once created, tap the variable name and type in the name of the habit *as it appears in VirginPulse*. **Capitalization and spaces matter.**
 
@@ -211,232 +211,232 @@ For example, if Tasker is going to track the habits `Start With Oats`, `Get some
 
 ##### `%MindfulHoursDefault`
 
-Default Value: `0`<br />
-Possible Values: `0` to `??`
+  * Default Value: `0`
+  * Possible Values: `0` to `??`
 
 This is the default value displayed in VirginPulse for the habit `Mindful Moment`. It represents the number of hours you spent engaged in this activity. Generally speaking, zero is the best value for this variable.
 
 ##### `%MindfulHoursMax`
 
-Default Value: `0`<br />
-Possible Values: `0` to `??`
+  * Default Value: `0`
+  * Possible Values: `0` to `??`
 
 This is used for randomizing the hours spent on the habit `Mindful Moment`, and it represents the upper bound of the range of values. Setting this equal to, or less than, `%MindfulHoursMin` will remove randomization.
 
 ##### `%MindfulHoursMin`
 
-Default Value: `0`<br />
-Possible Values: `0` to `??`
+  * Default Value: `0`
+  * Possible Values: `0` to `??`
 
 This is used for randomizing the hours spent on the habit `Mindful Moment`, and it represents the lower bound of the range of values. Setting this equal to, or greater than, `%MindfulHoursMax` will remove randomization.
 
 ##### `%MindfulMinutesDefault`
 
-Default Value: `30`<br />
-Possible Values: `0` to `59`
+  * Default Value: `30`
+  * Possible Values: `0` to `59`
 
 This is the default value displayed in VirginPulse for the habit `Mindful Moment`. It represents the number of minutes you spent engaged in this activity. Generally speaking, 30 is the best value for this variable because it results in the least travel required to reach all the possible values.
 
 ##### `%MindfulMinutesMax`
 
-Default Value: `59`<br />
-Possible Values: `0` to `59`
+  * Default Value: `59`
+  * Possible Values: `0` to `59`
 
 This is used for randomizing the minutes spent on the habit `Mindful Moment`, and it represents the upper bound of the range of values. Setting this equal to, or less than, `%MindfulMinutesMin` will remove randomization.
 
 ##### `%MindfulMinutesMin`
 
-Default Value: `0`<br />
-Possible Values: `0` to `59`
+  * Default Value: `0`
+  * Possible Values: `0` to `59`
 
 This is used for randomizing the minutes spent on the habit `Mindful Moment`, and it represents the lower bound of the range of values. Setting this equal to, or greater than, `%MindfulMinutesMax` will remove randomization.
 
 ##### `%ReachedTarget`
 
-Default Value: `false`<br />
-Possible Values: `true`, `false`
+  * Default Value: `false`
+  * Possible Values: `true`, `false`
 
 This is used to track whether you have reached your annual points target. When this is set to `true`, Tasker will not perform wellness tracking for you. This is reset to `false` on 1 September. Otherwise, Tasker checks the number of points you have accumulated each time it does wellness tracking and updates this to `true` when your annual points target has been reached or exceeded. *You do not need to do anything with this variable.* **Ever.**
 
 ##### `%SleepHoursDefault`
 
-Default Value: `7`<br />
-Possible Values: `0` to `??`
+  * Default Value: `7`
+  * Possible Values: `0` to `??`
 
 This is the default value displayed in VirginPulse for the habit `Get some sleep`. It represents the number of hours you spent engaged in this activity. Generally speaking, seven is the best value for this variable.
 
 ##### `%SleepHoursMax`
 
-Default Value: `8`<br />
-Possible Values: `0` to `23`
+  * Default Value: `8`
+  * Possible Values: `0` to `23`
 
 This is used for randomizing the hours spent on the habit `Get some sleep`, and it represents the upper bound of the range of values. Setting this equal to, or less than, `%SleepHoursMin` will remove randomization.
 
 ##### `%SleepHoursMin`
 
-Default Value: `7`<br />
-Possible Values: `0` to `23`
+  * Default Value: `7`
+  * Possible Values: `0` to `23`
 
 This is used for randomizing the hours spent on the habit `Get some sleep`, and it represents the lower bound of the range of values. Setting this equal to, or greater than, `%SleepHoursMax` will remove randomization.
 
 ##### `%SleepMinutesDefault`
 
-Default Value: `30`<br />
-Possible Values: `0` to `59`
+  * Default Value: `30`
+  * Possible Values: `0` to `59`
 
 The default value displayed in VirginPulse for the habit `Get some sleep` is actually zero. It represents the number of minutes you spent engaged in this activity. Generally speaking, 30 is the best value for this variable because it results in the least travel required to reach all the possible values.
 
 ##### `%SleepMinutesMax`
 
-Default Value: `59`<br />
-Possible Values: `0` to `59`
+  * Default Value: `59`
+  * Possible Values: `0` to `59`
 
 This is used for randomizing the minutes spent on the habit `Get some sleep`, and it represents the upper bound of the range of values. Setting this equal to, or less than, `%SleepMinutesMin` will remove randomization.
 
 ##### `%SleepMinutesMin`
 
-Default Value: `0`<br />
-Possible Values: `0` to `59`
+  * Default Value: `0`
+  * Possible Values: `0` to `59`
 
 This is used for randomizing the minutes spent on the habit `Get some sleep`, and it represents the lower bound of the range of values. Setting this equal to, or greater than, `%SleepMinutesMax` will remove randomization.
 
 ##### `%StepsMax`
 
-Default Value: `8729`<br />
-Possible Values: `0` to `??`
+  * Default Value: `8729`
+  * Possible Values: `0` to `??`
 
 This is used for randomizing the value for the habit `Steps`, and it represents the upper bound of the number of steps you take each day. This is habit is completed simply by typing in the number of steps you took; as such, the default value is entirely arbitrary and it is the value set by the easy setup routine mentioned earlier.
 
-Setting this equal to, or less than, the value of `%StepsMin` will remove randomiation.
+Setting this equal to, or less than, the value of `%StepsMin` will remove randomization.
 
 ##### `%StepsMin`
 
-Default Value: `1952`<br />
-Possible Values: `0` to `??`
+  * Default Value: `1952`
+  * Possible Values: `0` to `??`
 
 This is used for randomizing the value for the habit `Steps`, and it represents the lower bound of the number of steps you take each day. This is habit is completed simply by typing in the number of steps you took; as such, the default value is entirely arbitrary and it is the value set by the easy setup routine mentioned earlier.
 
-Setting this equal to, or greater than, the value of `%StepsMax` will remove randomiation.
+Setting this equal to, or greater than, the value of `%StepsMax` will remove randomization.
 
 ##### `%StressDefault`
 
-Default Value: `3`<br />
-Possible Values: `1` to `5`
+  * Default Value: `3`
+  * Possible Values: `1` to `5`
 
 This is the default value displayed in VirginPulse for the habit `Stress Levels`. It represents your stress level on a scale of one to five. Generally speaking, three is the best value for this variable because it requires the least travel to reach all possible values.
 
 ##### `%StressMax`
 
-Default Value: `5`<br />
-Possible Values: `1` to `5`
+  * Default Value: `5`
+  * Possible Values: `1` to `5`
 
 This is used for randomizing your estimated stress level in the habit `Stress Levels`, and it represents the upper bound of the range. Setting this equal to, or less than, `%StressMin` will remove randomization.
 
 ##### `%StressMin`
 
-Default Value: `1`<br />
-Possible Values: `1` to `5`
+  * Default Value: `1`
+  * Possible Values: `1` to `5`
 
 This is used for randomizing your estimated stress level in the habit `Stress Levels`, and it represents the lower bound of the range. Setting this equal to, or greater than, `%StressMax` will remove randomization.
 
 ##### `%StretchingHoursDefault`
 
-Default Value: `0`<br />
-Possible Values: `0` to `??`
+  * Default Value: `0`
+  * Possible Values: `0` to `??`
 
 This is the default value displayed in VirginPulse for the habit `Minutes of Stretching`. It represents the number of hours you spent engaged in this activity. Generally speaking, zero is the best value for this variable.
 
 ##### `%StretchingHoursMax`
 
-Default Value: `0`<br />
-Possible Values: `0` to `??`
+  * Default Value: `0`
+  * Possible Values: `0` to `??`
 
 This is used for randomizing the hours spent on the habit `Minutes of Stretching`, and it represents the upper bound of the range of values. Setting this equal to, or less than, `%StretchingHoursMin` will remove randomization.
 
 ##### `%StretchingHoursMin`
 
-Default Value: `0`<br />
-Possible Values: `0` to `??`
+  * Default Value: `0`
+  * Possible Values: `0` to `??`
 
 This is used for randomizing the hours spent on the habit `Minutes of Stretching`, and it represents the lower bound of the range of values. Setting this equal to, or greater than, `%StretchingHoursMax` will remove randomization.
 
 ##### `%StretchingMinutesDefault`
 
-Default Value: `30`<br />
-Possible Values: `0` to `59`
+  * Default Value: `30`
+  * Possible Values: `0` to `59`
 
 This is the default value displayed in VirginPulse for the habit `Minutes of Stretching`. It represents the number of minutes you spent engaged in this activity. Generally speaking, 30 is the best value for this variable because it results in the least travel required to reach all the possible values.
 
 ##### `%StretchingMinutesMax`
 
-Default Value: `59`<br />
-Possible Values: `0` to `59`
+  * Default Value: `59`
+  * Possible Values: `0` to `59`
 
 This is used for randomizing the minutes spent on the habit `Minutes of Stretching`, and it represents the upper bound of the range of values. Setting this equal to, or less than, `%StretchingMinutesMin` will remove randomization.
 
 ##### `%StretchingMinutesMin`
 
-Default Value: `0`<br />
-Possible Values: `0` to `59`
+  * Default Value: `0`
+  * Possible Values: `0` to `59`
 
 This is used for randomizing the minutes spent on the habit `Minutes of Stretching`, and it represents the lower bound of the range of values. Setting this equal to, or greater than, `%StretchingMinutesMax` will remove randomization.
 
 ##### `%WeightMax`
 
-Default Value: `160`<br />
-Possible Values: `0` to `??`
+  * Default Value: `160`
+  * Possible Values: `0` to `??`
 
 This is used for randomizing the value for the habit `Track your weight`, and it represents the upper bound of your weight. This is habit is completed simply by typing in your weight; as such, the default value is entirely arbitrary and it is the value set by the easy setup routine mentioned earlier.
 
-Setting this equal to, or less than, the value of `%WeightMin` will remove randomiation.
+Setting this equal to, or less than, the value of `%WeightMin` will remove randomization.
 
 ##### `%WeightMin`
 
-Default Value: `150`<br />
-Possible Values: `0` to `??`
+  * Default Value: `150`
+  * Possible Values: `0` to `??`
 
 This is used for randomizing the value for the habit `Track your weight`, and it represents the lower bound of your weight. This is habit is completed simply by typing in your weight; as such, the default value is entirely arbitrary and it is the value set by the easy setup routine mentioned earlier.
 
-Setting this equal to, or greater than, the value of `%WeightMax` will remove randomiation.
+Setting this equal to, or greater than, the value of `%WeightMax` will remove randomization.
 
 ##### `%YogaHoursDefault`
 
-Default Value: `0`<br />
-Possible Values: `0` to `??`
+  * Default Value: `0`
+  * Possible Values: `0` to `??`
 
 This is the default value displayed in VirginPulse for the habit `Yoga`. It represents the number of hours you spent engaged in this activity. Generally speaking, zero is the best value for this variable.
 
 ##### `%YogaHoursMax`
 
-Default Value: `1`<br />
-Possible Values: `0` to `??`
+  * Default Value: `1`
+  * Possible Values: `0` to `??`
 
 This is used for randomizing the hours spent on the habit `Yoga`, and it represents the upper bound of the range of values. Setting this equal to, or less than, `%YogaHoursMin` will remove randomization.
 
 ##### `%YogaHoursMin`
 
-Default Value: `0`<br />
-Possible Values: `0` to `??`
+  * Default Value: `0`
+  * Possible Values: `0` to `??`
 
 This is used for randomizing the hours spent on the habit `Yoga`, and it represents the lower bound of the range of values. Setting this equal to, or greater than, `%YogaHoursMax` will remove randomization.
 
 ##### `%YogaMinutesDefault`
 
-Default Value: `30`<br />
-Possible Values: `0` to `59`
+  * Default Value: `30`
+  * Possible Values: `0` to `59`
 
 This is the default value displayed in VirginPulse for the habit `Yoga`. It represents the number of minutes you spent engaged in this activity. Generally speaking, 30 is the best value for this variable because it results in the least travel required to reach all the possible values.
 
 ##### `%YogaMinutesMax`
 
-Default Value: `59`<br />
-Possible Values: `0` to `59`
+  * Default Value: `59`
+  * Possible Values: `0` to `59`
 
 This is used for randomizing the minutes spent on the habit `Yoga`, and it represents the upper bound of the range of values. Setting this equal to, or less than, `%YogaMinutesMin` will remove randomization.
 
 ##### `%YogaMinutesMin`
 
-Default Value: `0`<br />
-Possible Values: `0` to `59`
+  * Default Value: `0`
+  * Possible Values: `0` to `59`
 
 This is used for randomizing the minutes spent on the habit `Yoga`, and it represents the lower bound of the range of values. Setting this equal to, or greater than, `%YogaMinutesMax` will remove randomization.

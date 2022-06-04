@@ -47,8 +47,8 @@ Instead, you will need to tap the `PROFILES` tab, then tap the profile you want 
 
 #### `%HolidayCalendar`
 
-Default Value: no default
-Possible Values: varies; string
+  * Default Value: no default
+  * Possible Values: varies; string
 
 This is the calendar that contains events that indicate when your employer is closed. This project expects that these are the only events on this calendar. If you don't have a clean calendar that contains only these events, then I recommend using only the `Toggle Vibrate: Without Holiday Calendar` profile.
 
@@ -56,14 +56,14 @@ In fact, the only reason I make use of this variable is because people tend to b
 
 #### `%SetupToggleVibrate`
 
-Default Value: no default
-Possible Values: `false`, `true`, anything other than `false`
+  * Default Value: no default
+  * Possible Values: `false`, `true`, anything other than `false`
 
 This controls whether the setup profile will trigger. When this variable is set to `false`, setup will not run. Therefore, by setting this to anything other than `false`, including simply erasing its value, and turning on the setup profile, setup can be run again at any time.
 
 #### `%WorkCalendar`
 
-Default Value: no default
-Possible Values: varies; string
+  * Default Value: no default
+  * Possible Values: varies; string
 
 This is the calendar that contains meeting events, which are really any event where you are marked as `busy`, and your `Out of office` events.

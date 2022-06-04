@@ -16,9 +16,9 @@ It has two profiles: one that will also check a calendar for holiday events (ind
 
 ## Apps Required
 
-  * [Tasker]()
-  * [AutoCalendar]()
-  * [AutoApps]()
+  * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)
+  * [AutoCalendar](https://play.google.com/store/apps/details?id=com.joaomgcd.autocalendar)
+  * [AutoApps](https://play.google.com/store/search?q=autoapps&c=apps)
 
 In order to use this project, you will need to purchase Tasker (about $4 USD). If you want to use the installer, you will also need to purchase a subscription to AutoApps. Currently, the subscription is $1.35 USD per month or $14.29 USD per year. If you're going to use Tasker more extensively, the subscription is worth it because it unlocks all the Tasker plugins.
 

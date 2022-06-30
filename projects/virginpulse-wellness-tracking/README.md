@@ -3,7 +3,7 @@
   * Version: 2.0.4
   * Release Date: 3 Jun 2022
   * [Changelog](changelog.md)
-  
+
   * Alpha: [2.0.5a](https://drive.google.com/drive/folders/1R3zcxIy90VOKFCEX-rZ820REEYS4X_bm?usp=sharing)
   * Release Date: 30 Jun 2022
   * [Changelog](changelog.md)

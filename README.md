@@ -12,6 +12,7 @@ Tasker has a number of permissions that can be granted to it. You don't necessar
 
 Here is the list of projects I'm sharing (or plan to share):
 
+  * [Call Screening](https://github.com/c-d-smith/android-automation/tree/main/projects/call-screening)
   * [Email Control](https://github.com/c-d-smith/android-automation/tree/main/projects/email-control)
   * [Toggle Vibrate for Meetings](https://github.com/c-d-smith/android-automation/tree/main/projects/toggle-vibrate-for-meetings/README.md)
   * [VirginPulse Wellness Tracking](projects/virginpulse-wellness-tracking/README.md)

@@ -16,7 +16,7 @@ Here is the list of projects I'm sharing (or plan to share):
   * [Email Control](https://github.com/c-d-smith/android-automation/tree/main/projects/email-control)
   * [Toggle Vibrate for Meetings](https://github.com/c-d-smith/android-automation/tree/main/projects/toggle-vibrate-for-meetings/README.md)
   * [VirginPulse Wellness Tracking](projects/virginpulse-wellness-tracking/README.md)
-  * Volume Control
+  * [Volume Control](https://github.com/c-d-smith/android-automation/tree/main/projects/volume-control)
 
 I have other projects that I'll eventually share. For now, these are the ones most likely to be useful to the most people.
 

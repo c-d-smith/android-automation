@@ -1,3 +1,11 @@
+# v2.0.5a
+
+Changed the installer to prevent it from overwriting global variable values, which will protect any customizations the user may have done while still enabling them to use the installer to easily and quickly update their tracked habits.
+
+Changed how the project handles deleting a habit added as part of a journey. It now stores the name of the habit in `%HabitToDelete`, rather than trying to dynamically determine this. This will eliminate collisions between a habit added as part of a challenge that cannot yet be deleted and a habit added as part of a journey.
+
+Implemented new functionality to handle updated privacy policies. Without this, Tasker cannot progress to the home screen and perform the tracking. Today is the first time I have seen this screen.
+
 # v2.0.4
 
 Fixed a bug in the setup routine that incorrectly referenced an obsolete variable used to set the device's unlock swipe direction. This caused `%SwipeDirection` to be incorrectly set to `%input`, leading to Tasker being unable to unlock the phone.

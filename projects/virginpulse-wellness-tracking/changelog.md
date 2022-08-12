@@ -1,3 +1,11 @@
+# v2.0.6a
+
+Fixed a bug where the habit delete button coordinates were not being correctly returned after querying for them. This prevented habits added as part of a journey from being deleted as they should have been.
+
+Added the ability to interact with the year-end card announcing the start of the new program year.
+
+Added a query for the transient dialog that asks the user to rate the application. I got fortunate and had one of these dialogs appear as I was querying for something else.
+
 # v2.0.5a
 
 Changed the installer to prevent it from overwriting global variable values, which will protect any customizations the user may have done while still enabling them to use the installer to easily and quickly update their tracked habits.

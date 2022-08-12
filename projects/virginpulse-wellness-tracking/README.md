@@ -7,7 +7,7 @@
 --------------------
 
   * Alpha: [2.0.6a](https://drive.google.com/drive/folders/1R3zcxIy90VOKFCEX-rZ820REEYS4X_bm?usp=sharing)
-  * Release Date: 6 Jul 2022
+  * Release Date: 12 Aug 2022
   * [Changelog](changelog.md)
 
 ## Get the Project Code

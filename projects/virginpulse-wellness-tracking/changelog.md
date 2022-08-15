@@ -1,22 +1,27 @@
+# v2.0.7a
+
+  * Changed how cards are processed.
+    * Previously, the main screen was checked to see if there were any cards available with which to interact. This could lead to an infinite loop where a card existed that Tasker did not know how to interact with. This lead to a situation where Tasker would enter the card screen, be unable to interact with the available card, then exit to Home and re-query for available cards.
+    * In this release, the cards screen is accessed, then it is queried to check if there are any cards with buttons labeled `GOT IT`, `WILL DO`, or `TRUE`.
+    * This means that Tasker will no longer attempt to interact with all the cards. It will only interact with matching cards or with cards that display before them.
+    * It also means that Tasker will enter the cards screen one extra time, and then exits back to the Home screen to proceed to journeys.
+  * Updated the "Decline Home screen offers" logic to include `Not now` as a valid button.
+
 # v2.0.6a
 
-Fixed a bug where the habit delete button coordinates were not being correctly returned after querying for them. This prevented habits added as part of a journey from being deleted as they should have been.
-
-Added the ability to interact with the year-end card announcing the start of the new program year.
-
-Added a query for the transient dialog that asks the user to rate the application. I got fortunate and had one of these dialogs appear as I was querying for something else.
+  * Fixed a bug where the habit delete button coordinates were not being correctly returned after querying for them. This prevented habits added as part of a journey from being deleted as they should have been.
+  * Added the ability to interact with the year-end card announcing the start of the new program year.
+  * Added a query for the transient dialog that asks the user to rate the application. I got fortunate and had one of these dialogs appear as I was querying for something else.
 
 # v2.0.5a
 
-Changed the installer to prevent it from overwriting global variable values, which will protect any customizations the user may have done while still enabling them to use the installer to easily and quickly update their tracked habits.
-
-Changed how the project handles deleting a habit added as part of a journey. It now stores the name of the habit in `%HabitToDelete`, rather than trying to dynamically determine this. This will eliminate collisions between a habit added as part of a challenge that cannot yet be deleted and a habit added as part of a journey.
-
-Implemented new functionality to handle updated privacy policies. Without this, Tasker cannot progress to the home screen and perform the tracking. Today is the first time I have seen this screen.
+  * Changed the installer to prevent it from overwriting global variable values, which will protect any customizations the user may have done while still enabling them to use the installer to easily and quickly update their tracked habits.
+  * Changed how the project handles deleting a habit added as part of a journey. It now stores the name of the habit in `%HabitToDelete`, rather than trying to dynamically determine this. This will eliminate collisions between a habit added as part of a challenge that cannot yet be deleted and a habit added as part of a journey.
+  * Implemented new functionality to handle updated privacy policies. Without this, Tasker cannot progress to the home screen and perform the tracking. Today is the first time I have seen this screen.
 
 # v2.0.4
 
-Fixed a bug in the setup routine that incorrectly referenced an obsolete variable used to set the device's unlock swipe direction. This caused `%SwipeDirection` to be incorrectly set to `%input`, leading to Tasker being unable to unlock the phone.
+  * Fixed a bug in the setup routine that incorrectly referenced an obsolete variable used to set the device's unlock swipe direction. This caused `%SwipeDirection` to be incorrectly set to `%input`, leading to Tasker being unable to unlock the phone.
 
 # v2.0.3
 

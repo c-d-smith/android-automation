@@ -1,3 +1,7 @@
+# v2.0.8a
+
+  * Fixed a bug where the name of a habit added as part of a journey was not being stored in a global variable. This created a situation where the habit could not be deleted from the list of tracked habits.
+
 # v2.0.7a
 
   * Changed how cards are processed.

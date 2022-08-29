@@ -6,8 +6,8 @@
 
 --------------------
 
-  * Alpha: [2.0.7a](https://drive.google.com/drive/folders/1R3zcxIy90VOKFCEX-rZ820REEYS4X_bm?usp=sharing)
-  * Release Date: 15 Aug 2022
+  * Alpha: [2.0.8a](https://drive.google.com/drive/folders/1R3zcxIy90VOKFCEX-rZ820REEYS4X_bm?usp=sharing)
+  * Release Date: 29 Aug 2022
   * [Changelog](changelog.md)
 
 ## Get the Project Code

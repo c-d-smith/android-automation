@@ -1,3 +1,7 @@
+# v2.0.9a
+
+  * Changed how `No, Thanks` is handled when there is an offer to add a habit.
+
 # v2.0.8a
 
   * Fixed a bug where the name of a habit added as part of a journey was not being stored in a global variable. This created a situation where the habit could not be deleted from the list of tracked habits.

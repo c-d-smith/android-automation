@@ -10,7 +10,7 @@
 
 ## Overview
 
-This project will wake your phone and unlock your phone. It works with the following lock screen types: PIN, swipe, or no security at all.
+This project will wake your phone and unlock your phone. It works with the following lock screen types: PIN, swipe, or no security at all. It is designed to be invoked by other projects when they need to unlock your phone. This project is very simple and does not provide any other interfaces or methods to invoke it.
 
 It might be able to be modified to unlock using a pattern lock screen, but this will be brittle and will need to be updated each time the user gets a new phone because the coordinates of the dots vary by screen size and resolution. Due to this, I am unwilling to support this lock screen type.
 

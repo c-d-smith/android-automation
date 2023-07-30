@@ -20,6 +20,8 @@ The PIN is stored in a global variable, the value of which is not exported unles
 
 This project includes an installer that helps you set the few global variables needed for it to function correctly. Therefore, there is never a reason to export the value of any of the global variables and thereby compromise your security.
 
+You can also [view the project exported as a description](https://github.com/c-d-smith/android-automation/blob/main/projects/unlock-phone/Unlock_Phone_description.md), which is how they are usually displayed on Reddit.
+
 ## Apps Required
 
   * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)

@@ -1,7 +1,7 @@
 # Unlock Phone
 
-  * Version: 1.0.0
-  * Release Date: 30 Jul 2023
+  * Version: 1.1.0
+  * Release Date: 1 Aug 2023
 
 ## Get the Project Code
 
@@ -21,6 +21,10 @@ The PIN is stored in a global variable, the value of which is not exported unles
 This project includes an installer that helps you set the few global variables needed for it to function correctly. Therefore, there is never a reason to export the value of any of the global variables and thereby compromise your security.
 
 You can also [view the project exported as a description](https://github.com/c-d-smith/android-automation/blob/main/projects/unlock-phone/Unlock_Phone_description.md), which is how they are usually displayed on Reddit.
+
+## Dependencies
+
+This project is dependent on the [Wait Functions](https://github.com/c-d-smith/android-automation/tree/main/projects/wait-functions) and the [Swipe Functions](https://github.com/c-d-smith/android-automation/tree/main/projects/swipe-functions) projects.
 
 ## Apps Required
 

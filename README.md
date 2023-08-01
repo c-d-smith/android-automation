@@ -10,20 +10,23 @@ Tasker has a number of permissions that can be granted to it. You don't necessar
 
 ## Projects
 
-Here is the list of projects I'm sharing (or plan to share):
+Supported Projects:
 
   * [Call Screening](https://github.com/c-d-smith/android-automation/tree/main/projects/call-screening/README.md)
-  * Claim Google Play Perks
-  * [Delete PokemonGO Pictures](https://github.com/c-d-smith/android-automation/blob/main/projects/delete-pokemongo-pictures/README.md)
   * [Swipe Functions](https://github.com/c-d-smith/android-automation/blob/main/projects/swipe-functions/README.md)
-  * [Toggle Vibrate for Meetings](https://github.com/c-d-smith/android-automation/tree/main/projects/toggle-vibrate-for-meetings/README.md)
   * [Unlock Phone](https://github.com/c-d-smith/android-automation/blob/main/projects/unlock-phone/README.md)
   * [Volume Functions](https://github.com/c-d-smith/android-automation/blob/main/projects/volume-functions/README.md)
   * [Wait Functions](https://github.com/c-d-smith/android-automation/blob/main/projects/wait-functions/README.md)
 
+Projects in Development:
+  * Claim Google Play Perks
+
+
 Unsupported Projects:
 
+  * [Delete PokemonGO Pictures](https://github.com/c-d-smith/android-automation/blob/main/projects/delete-pokemongo-pictures/README.md)‡
   * [Email Control](https://github.com/c-d-smith/android-automation/tree/main/projects/email-control/README.md)•
+  * [Toggle Vibrate for Meetings](https://github.com/c-d-smith/android-automation/tree/main/projects/toggle-vibrate-for-meetings/README.md)‡
   * [VirginPulse Wellness Tracking](projects/virginpulse-wellness-tracking/README.md)±
   * [Volume Control](https://github.com/c-d-smith/android-automation/tree/main/projects/volume-control/README.me)‡
 

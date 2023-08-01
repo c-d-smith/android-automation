@@ -15,14 +15,27 @@ Here is the list of projects I'm sharing (or plan to share):
   * [Call Screening](https://github.com/c-d-smith/android-automation/tree/main/projects/call-screening/README.md)
   * Claim Google Play Perks
   * [Delete PokemonGO Pictures](https://github.com/c-d-smith/android-automation/blob/main/projects/delete-pokemongo-pictures/README.md)
-  * [Email Control](https://github.com/c-d-smith/android-automation/tree/main/projects/email-control/README.md)
+  * [Swipe Functions](https://github.com/c-d-smith/android-automation/blob/main/projects/swipe-functions/README.md)
   * [Toggle Vibrate for Meetings](https://github.com/c-d-smith/android-automation/tree/main/projects/toggle-vibrate-for-meetings/README.md)
-  * [VirginPulse Wellness Tracking](projects/virginpulse-wellness-tracking/README.md)
-  * [Volume Control](https://github.com/c-d-smith/android-automation/tree/main/projects/volume-control/README.me)
+  * [Unlock Phone](https://github.com/c-d-smith/android-automation/blob/main/projects/unlock-phone/README.md)
+  * [Volume Functions](https://github.com/c-d-smith/android-automation/blob/main/projects/volume-functions/README.md)
+  * [Wait Functions](https://github.com/c-d-smith/android-automation/blob/main/projects/wait-functions/README.md)
+
+Unsupported Projects:
+
+  * [Email Control](https://github.com/c-d-smith/android-automation/tree/main/projects/email-control/README.md)•
+  * [VirginPulse Wellness Tracking](projects/virginpulse-wellness-tracking/README.md)±
+  * [Volume Control](https://github.com/c-d-smith/android-automation/tree/main/projects/volume-control/README.me)‡
 
 I have other projects that I'll eventually share. For now, these are the ones most likely to be useful to the most people.
 
 On each project's README page, there will be a link to get the code from Google Drive and a link to get the code from an XML file in this repository. The Google Drive link should be preferred because, if there is a delay in getting this repository's XML updated for a project, the file linked from Google Drive will always be up-to-date. I will do my best to make sure the XML file in this repository gets updated very quickly after an updated project file is uploaded to Google Drive.
+
+Projects marked with `‡` will be refactored.
+
+Projects marked with `•` may be refactored.
+
+Projects marked with `±` will only be refactored if there is enough interest.
 
 ## Roadmap
 

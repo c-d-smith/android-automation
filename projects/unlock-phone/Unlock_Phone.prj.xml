@@ -23,7 +23,11 @@
 		<cdate>1690668977898</cdate>
 		<name>Unlock Phone</name>
 		<pids>172</pids>
-		<tids>158,58,60,163,15,178,157,29,16,68,160,177,159,161,164,57,176,13</tids>
+		<tids>29,176,15,57,159,16,158,94,161,163,177,164,13,178,157,68,60,160,58</tids>
+		<Img sr="icon" ve="2">
+			<nme>password</nme>
+			<pkg>net.dinglisch.android.ipack.crystalhd</pkg>
+		</Img>
 	</Project>
 	<Task sr="task13">
 		<cdate>1591651079109</cdate>
@@ -139,7 +143,7 @@ The &lt;b&gt;Device/Keyguard Locked&lt;/b&gt; represents the current state of th
 	</Task>
 	<Task sr="task15">
 		<cdate>1627653156737</cdate>
-		<edate>1690671112277</edate>
+		<edate>1690807292231</edate>
 		<id>15</id>
 		<nme>Unlock Phone: Screen On</nme>
 		<Action sr="act0" ve="7">
@@ -183,7 +187,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task157">
 		<cdate>1690669484261</cdate>
-		<edate>1690675349373</edate>
+		<edate>1690895588682</edate>
 		<id>157</id>
 		<nme>Unlock Phone: Swipe</nme>
 		<pri>100</pri>
@@ -199,7 +203,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Unlock Phone: Swipe, Vertical</Str>
+			<Str sr="arg0" ve="3">Swipe Functions: Vertical</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -218,7 +222,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Unlock Phone: Swipe, Horizontal</Str>
+			<Str sr="arg0" ve="3">Swipe Functions: Horizontal</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -238,7 +242,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		<Action sr="act5" ve="7">
 			<code>130</code>
 			<label>Wait 1s.</label>
-			<Str sr="arg0" ve="3">Unlock Phone: Wait</Str>
+			<Str sr="arg0" ve="3">Wait Functions: Main</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -255,7 +259,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task158">
 		<cdate>1690670786339</cdate>
-		<edate>1690671267617</edate>
+		<edate>1690895772143</edate>
 		<id>158</id>
 		<nme>Unlock Phone: Wake Screen</nme>
 		<Action sr="act0" ve="7">
@@ -297,12 +301,12 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		<Action sr="act3" ve="7">
 			<code>130</code>
 			<label>Wait 4s.</label>
-			<Str sr="arg0" ve="3">Unlock Phone: Wait</Str>
+			<Str sr="arg0" ve="3">Wait Functions: Main</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="1"/>
-			<Str sr="arg2" ve="3">0</Str>
+			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3">4</Str>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -317,16 +321,11 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task159">
 		<cdate>1690671327233</cdate>
-		<edate>1690678564424</edate>
+		<edate>1690807268420</edate>
 		<id>159</id>
 		<nme>Unlock Phone: Install: Main</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">Unlock Phone: Install</Str>
-			<Int sr="arg1" val="0"/>
-		</Action>
-		<Action sr="act1" ve="7">
 			<code>130</code>
 			<label>Show overview and store whether the user indicated they have AutoInput.</label>
 			<Str sr="arg0" ve="3">Unlock Phone: Install: AutoInput</Str>
@@ -343,7 +342,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="0"/>
 		</Action>
-		<Action sr="act2" ve="7">
+		<Action sr="act1" ve="7">
 			<code>130</code>
 			<label>Set %SwipeDirection.</label>
 			<Str sr="arg0" ve="3">Unlock Phone: Install: Swipe Direction</Str>
@@ -360,7 +359,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="0"/>
 		</Action>
-		<Action sr="act3" ve="7">
+		<Action sr="act2" ve="7">
 			<code>130</code>
 			<label>Set %Checkmark.</label>
 			<Str sr="arg0" ve="3">Unlock Phone: Install: Checkmark</Str>
@@ -377,7 +376,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="0"/>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act3" ve="7">
 			<code>130</code>
 			<label>Set %Password.</label>
 			<Str sr="arg0" ve="3">Unlock Phone: Install: PIN</Str>
@@ -394,7 +393,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="0"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act4" ve="7">
 			<code>130</code>
 			<label>Open AutoInput, if they don't have it.
 
@@ -416,7 +415,7 @@ Offer to test unlocking the phone, if they do.</label>
 	</Task>
 	<Task sr="task16">
 		<cdate>1627653779040</cdate>
-		<edate>1690676533577</edate>
+		<edate>1690819963384</edate>
 		<id>16</id>
 		<nme>Unlock Phone: Screen Off</nme>
 		<Action sr="act0" ve="7">
@@ -466,7 +465,7 @@ You need to install and purchase AutoInput for this to work! If you do not curre
 	</Task>
 	<Task sr="task161">
 		<cdate>1690674291875</cdate>
-		<edate>1690674299214</edate>
+		<edate>1690807285522</edate>
 		<id>161</id>
 		<nme>Unlock Phone: Install: Swipe Direction</nme>
 		<Action sr="act0" ve="7">
@@ -502,7 +501,7 @@ The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker
 	</Task>
 	<Task sr="task163">
 		<cdate>1690674363230</cdate>
-		<edate>1690674949105</edate>
+		<edate>1690807251004</edate>
 		<id>163</id>
 		<nme>Unlock Phone: Install: Checkmark</nme>
 		<Action sr="act0" ve="7">
@@ -627,7 +626,7 @@ NOTE: Clicking "Cancel" will clear the value of the global variable "Password" i
 	</Task>
 	<Task sr="task176">
 		<cdate>1690676411452</cdate>
-		<edate>1690676830564</edate>
+		<edate>1690807281929</edate>
 		<id>176</id>
 		<nme>Unlock Phone: Install: Cleanup</nme>
 		<Action sr="act0" ve="7">
@@ -683,10 +682,15 @@ NOTE: Clicking "Cancel" will clear the value of the global variable "Password" i
 		<Action sr="act5" ve="7">
 			<code>38</code>
 		</Action>
+		<Action sr="act6" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Unlock Phone: Install</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
 	</Task>
 	<Task sr="task177">
 		<cdate>1690676458184</cdate>
-		<edate>1690676663732</edate>
+		<edate>1690819630585</edate>
 		<id>177</id>
 		<nme>Unlock Phone: Install: Test</nme>
 		<Action sr="act0" ve="7">
@@ -741,9 +745,10 @@ The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker
 	</Task>
 	<Task sr="task178">
 		<cdate>1690676561844</cdate>
-		<edate>1690676687911</edate>
+		<edate>1690895797516</edate>
 		<id>178</id>
 		<nme>Unlock Phone: Install: Test Unlocking</nme>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Unlock Phone: Screen Off</Str>
@@ -763,7 +768,7 @@ The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker
 		<Action sr="act1" ve="7">
 			<code>130</code>
 			<label>Wait 4s.</label>
-			<Str sr="arg0" ve="3">Unlock Phone: Wait</Str>
+			<Str sr="arg0" ve="3">Wait Functions: Main</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -796,7 +801,7 @@ The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker
 	</Task>
 	<Task sr="task29">
 		<cdate>1532503807225</cdate>
-		<edate>1690671132123</edate>
+		<edate>1690823854649</edate>
 		<id>29</id>
 		<nme>Unlock Phone: Enter PIN</nme>
 		<pri>100</pri>
@@ -896,7 +901,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		<Action sr="act13" ve="7">
 			<code>130</code>
 			<label>Wait 1s.</label>
-			<Str sr="arg0" ve="3">Unlock Phone: Wait</Str>
+			<Str sr="arg0" ve="3">Wait Functions: Main</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -1033,7 +1038,7 @@ Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
 		<Action sr="act9" ve="7">
 			<code>130</code>
 			<label>Wait 200ms.</label>
-			<Str sr="arg0" ve="3">Unlock Phone: Wait</Str>
+			<Str sr="arg0" ve="3">Wait Functions: Wait</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -1050,7 +1055,7 @@ Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
 	</Task>
 	<Task sr="task57">
 		<cdate>1627653967182</cdate>
-		<edate>1690678590525</edate>
+		<edate>1690819892132</edate>
 		<id>57</id>
 		<nme>Unlock Phone: Main</nme>
 		<pri>100</pri>
@@ -1108,9 +1113,9 @@ Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
 	</Task>
 	<Task sr="task58">
 		<cdate>1630446299923</cdate>
-		<edate>1690675281574</edate>
+		<edate>1690808083334</edate>
 		<id>58</id>
-		<nme>Unlock Phone: Swipe, Vertical</nme>
+		<nme>Swipe Functions: Vertical</nme>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<label>Coordinates are passed as a comma delimited string using this pattern: X,Y1,Y2.&lt;br&gt;&lt;br&gt;
@@ -1205,9 +1210,9 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task60">
 		<cdate>1628849330084</cdate>
-		<edate>1690671228254</edate>
+		<edate>1690808162388</edate>
 		<id>60</id>
-		<nme>Unlock Phone: Swipe, Horizontal</nme>
+		<nme>Swipe Functions: Horizontal</nme>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<label>Coordinates are passed as a comma delimited string using this pattern: X1,X2,Y.&lt;br&gt;&lt;br&gt;
@@ -1301,9 +1306,9 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task68">
 		<cdate>1628085101268</cdate>
-		<edate>1690671254011</edate>
+		<edate>1690825509054</edate>
 		<id>68</id>
-		<nme>Unlock Phone: Wait</nme>
+		<nme>Wait Functions: Wait</nme>
 		<Action sr="act0" ve="7">
 			<code>300</code>
 			<label>Wait for a number of seconds (%par2) and milliseconds (%par1) as specified by the caller.&lt;br&gt;&lt;br&gt;
@@ -1373,6 +1378,152 @@ If no arguments are provided, we wait for 1s. If only one argument is provided, 
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task94">
+		<cdate>1690819685219</cdate>
+		<edate>1690895757260</edate>
+		<id>94</id>
+		<nme>Wait Functions: Main</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>300</code>
+			<label>Some text</label>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>300</code>
+			<label>Dwell time defaults to 1s 0ms, and is passed in as "s|ms". The pipe character separating the two values is important!
+
+The number of loops to perform defaults to 1.
+
+Simple loops of 1s duration can be performed by passing in only the number of loops.</label>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%idx</Str>
+			<Str sr="arg1" ve="3">%idx+1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">Wait loop.</Str>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%dwell_time</Str>
+			<Str sr="arg1" ve="3">1|0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%loop_control</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%dwell_time</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%loop_control</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>389</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""/&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">%seconds|%milliseconds</Str>
+			<Str sr="arg2" ve="3">|</Str>
+			<Str sr="arg3" ve="3">%dwell_time</Str>
+			<Str sr="arg4" ve="3">|</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="3"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%idx</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>37</code>
+			<label>Wait loop.</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%idx</lhs>
+					<op>6</op>
+					<rhs>%loop_control</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Wait Functions: Wait</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%milliseconds</Str>
+			<Str sr="arg3" ve="3">%seconds</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
 </TaskerData>

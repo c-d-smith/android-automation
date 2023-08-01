@@ -1,5 +1,5 @@
 ```
-    Profiles
+   Profiles
         Profile: Unlock Phone: Install
         	State: Variable Value  [ %SetupUnlockPhone neq false ]
         
@@ -7,31 +7,27 @@
         
         Enter Task: Unlock Phone: Install: Main
         
-        A1: Profile Status [
-             Name: Unlock Phone: Install
-             Set: Off ]
-        
         <Show overview and store whether the user indicated they have AutoInput.>
-        A2: Perform Task [
+        A1: Perform Task [
              Name: Unlock Phone: Install: AutoInput
              Priority: %priority
              Return Value Variable: %ai_selection
              Structure Output (JSON, etc): On ]
         
         <Set %SwipeDirection.>
-        A3: Perform Task [
+        A2: Perform Task [
              Name: Unlock Phone: Install: Swipe Direction
              Priority: %priority
              Structure Output (JSON, etc): On ]
         
         <Set %Checkmark.>
-        A4: Perform Task [
+        A3: Perform Task [
              Name: Unlock Phone: Install: Checkmark
              Priority: %priority
              Structure Output (JSON, etc): On ]
         
         <Set %Password.>
-        A5: Perform Task [
+        A4: Perform Task [
              Name: Unlock Phone: Install: PIN
              Priority: %priority
              Structure Output (JSON, etc): On ]
@@ -39,7 +35,7 @@
         <Open AutoInput, if they don't have it.
         
         Offer to test unlocking the phone, if they do.>
-        A6: Perform Task [
+        A5: Perform Task [
              Name: Unlock Phone: Install: Cleanup
              Priority: %priority
              Parameter 1 (%par1): %ai_selection
@@ -141,42 +137,6 @@
         
         
     
-        Task: Unlock Phone: Wait
-        
-        <Wait for a number of seconds (%par2) and milliseconds (%par1) as specified by the caller.<br><br>
-        
-        If no arguments are provided, we wait for 1s. If only one argument is provided, we will use that in combination with the default set for the other.>
-        A1: Anchor
-        
-        <Default to 1s 0ms>
-        A2: Multiple Variables Set [
-             Names: %milliseconds|%seconds
-             Variable Names Splitter: |
-             Values: 0|1
-             Values Splitter: |
-             Structure Output (JSON, etc): On ]
-        
-        A3: Variable Set [
-             Name: %milliseconds
-             To: %par1
-             Structure Output (JSON, etc): On ]
-            If  [ %par1 Set ]
-        
-        A4: Variable Set [
-             Name: %seconds
-             To: %par2
-             Structure Output (JSON, etc): On ]
-            If  [ %par2 Set ]
-        
-        A5: Wait [
-             MS: %milliseconds
-             Seconds: %seconds
-             Minutes: 0
-             Hours: 0
-             Days: 0 ]
-        
-        
-    
         Task: Unlock Phone: Not Used: Phone Lock Status
         
         <<b>Device Locked</b>: The device is locked and asks for authentication in order to use it.<br><br>
@@ -259,6 +219,10 @@
         
         A6: End If
         
+        A7: Profile Status [
+             Name: Unlock Phone: Install
+             Set: Off ]
+        
         
     
         Task: Unlock Phone: Screen Off
@@ -297,7 +261,7 @@
         
         <Wait 4s.>
         A2: Perform Task [
-             Name: Unlock Phone: Wait
+             Name: Wait Functions: Main
              Priority: %priority
              Parameter 2 (%par2): 4
              Structure Output (JSON, etc): On ]
@@ -327,87 +291,6 @@
         A3: Perform Task [
              Name: Unlock Phone: Enter PIN
              Priority: %priority
-             Structure Output (JSON, etc): On ]
-        
-        
-    
-        Task: Unlock Phone: Swipe, Vertical
-        
-        <Coordinates are passed as a comma delimited string using this pattern: X,Y1,Y2.<br><br>
-        
-        Y1 doesn't need to be smaller than Y2. If Y1 is larger, Tasker will swipe up; else it will swipe down.>
-        A1: Variable Set [
-             Name: %coords
-             To: %par1
-             Structure Output (JSON, etc): On ]
-        
-        A2: Variable Split [
-             Name: %coords
-             Splitter: ,
-             Delete Base: On ]
-        
-        A3: Variable Set [
-             Name: %duration
-             To: %par2
-             Structure Output (JSON, etc): On ]
-        
-        A4: Variable Set [
-             Name: %coord1
-             To: %coords(1),%coords(2)
-             Structure Output (JSON, etc): On ]
-        
-        A5: Variable Set [
-             Name: %coord2
-             To: %coords(1),%coords(3)
-             Structure Output (JSON, etc): On ]
-        
-        A6: AutoInput Gestures [
-             Configuration: Gesture Type: Swipe
-             Manage Accessibility Service: Unchanged
-             Start Point: %coord1
-             End Point: %coord2
-             Duration: %duration
-             Timeout (Seconds): 1
-             Structure Output (JSON, etc): On ]
-        
-        
-    
-        Task: Unlock Phone: Swipe, Horizontal
-        
-        <Coordinates are passed as a comma delimited string using this pattern: X1,X2,Y.<br><br>
-        
-        X1 doesn't need to be smaller than X2. If X1 is larger, Tasker will swipe left; else it will swipe right.>
-        A1: Variable Set [
-             Name: %coords
-             To: %par1
-             Structure Output (JSON, etc): On ]
-        
-        A2: Variable Split [
-             Name: %coords
-             Splitter: ,
-             Delete Base: On ]
-        
-        A3: Variable Set [
-             Name: %duration
-             To: %par2
-             Structure Output (JSON, etc): On ]
-        
-        A4: Variable Set [
-             Name: %coord1
-             To: %coords(1),%coords(3)
-             Structure Output (JSON, etc): On ]
-        
-        A5: Variable Set [
-             Name: %coord2
-             To: %coords(2),%coords(3)
-             Structure Output (JSON, etc): On ]
-        
-        A6: AutoInput Gestures [
-             Configuration: Gesture Type: Swipe
-             Start Point: %coord1
-             End Point: %coord2
-             Duration: %duration
-             Timeout (Seconds): 0
              Structure Output (JSON, etc): On ]
         
         
@@ -464,7 +347,7 @@
         
                     <Wait 200ms.>
                     A10: Perform Task [
-                          Name: Unlock Phone: Wait
+                          Name: Wait Functions: Wait
                           Priority: %priority
                           Parameter 1 (%par1): 200
                           Parameter 2 (%par2): 0
@@ -485,7 +368,7 @@
         
             <Wait 1s.>
             A14: Perform Task [
-                  Name: Unlock Phone: Wait
+                  Name: Wait Functions: Main
                   Priority: %priority
                   Structure Output (JSON, etc): On ]
         
@@ -498,7 +381,7 @@
         A1: If [ %SwipeDirection ~ *ertical ]
         
             A2: Perform Task [
-                 Name: Unlock Phone: Swipe, Vertical
+                 Name: Swipe Functions: Vertical
                  Priority: %priority
                  Parameter 1 (%par1): 500,2000,1225
                  Parameter 2 (%par2): 25
@@ -507,7 +390,7 @@
         A3: Else
         
             A4: Perform Task [
-                 Name: Unlock Phone: Swipe, Horizontal
+                 Name: Swipe Functions: Horizontal
                  Priority: %priority
                  Parameter 1 (%par1): 200,1500,1500
                  Parameter 2 (%par2): 500
@@ -517,7 +400,7 @@
         
         <Wait 1s.>
         A6: Perform Task [
-             Name: Unlock Phone: Wait
+             Name: Wait Functions: Main
              Priority: %priority
              Structure Output (JSON, etc): On ]
         
@@ -539,9 +422,8 @@
         
             <Wait 4s.>
             A4: Perform Task [
-                 Name: Unlock Phone: Wait
+                 Name: Wait Functions: Main
                  Priority: %priority
-                 Parameter 1 (%par1): 0
                  Parameter 2 (%par2): 4
                  Structure Output (JSON, etc): On ]
         
@@ -551,31 +433,27 @@
     
         Task: Unlock Phone: Install: Main
         
-        A1: Profile Status [
-             Name: Unlock Phone: Install
-             Set: Off ]
-        
         <Show overview and store whether the user indicated they have AutoInput.>
-        A2: Perform Task [
+        A1: Perform Task [
              Name: Unlock Phone: Install: AutoInput
              Priority: %priority
              Return Value Variable: %ai_selection
              Structure Output (JSON, etc): On ]
         
         <Set %SwipeDirection.>
-        A3: Perform Task [
+        A2: Perform Task [
              Name: Unlock Phone: Install: Swipe Direction
              Priority: %priority
              Structure Output (JSON, etc): On ]
         
         <Set %Checkmark.>
-        A4: Perform Task [
+        A3: Perform Task [
              Name: Unlock Phone: Install: Checkmark
              Priority: %priority
              Structure Output (JSON, etc): On ]
         
         <Set %Password.>
-        A5: Perform Task [
+        A4: Perform Task [
              Name: Unlock Phone: Install: PIN
              Priority: %priority
              Structure Output (JSON, etc): On ]
@@ -583,12 +461,12 @@
         <Open AutoInput, if they don't have it.
         
         Offer to test unlocking the phone, if they do.>
-        A6: Perform Task [
+        A5: Perform Task [
              Name: Unlock Phone: Install: Cleanup
              Priority: %priority
              Parameter 1 (%par1): %ai_selection
              Structure Output (JSON, etc): On ]
         
-        
+       
 
 ```
